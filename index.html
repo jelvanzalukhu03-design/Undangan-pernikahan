@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="weddingBgm" loop>
+        <source src="anu.mp4" type="audio/mp4">
+    </audio>
+
+    <button id="musicBtn" onclick="toggleMusic()">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <div id="welcome-screen" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('ji.jpg');">
+        <div class="welcome-content">
+            <h3 class="serif-title animate-fade">The Wedding Of</h3>
+            <h1 class="main-wedding-title animate-fade">Gibran & Selvi</h1>
+            <p class="welcome-subtitle">10 Hari Lagi Menuju Acara Kebahagiaan Kami</p>
+            
+            <div class="countdown-container">
+                <div class="countdown-box">
+                    <span id="days">00</span>
+                    <small>Hari</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="hours">00</span>
+                    <small>Jam</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="minutes">00</span>
+                    <small>Menit</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="seconds">00</span>
+                    <small>Detik</small>
+                </div>
+            </div>
+
+            <button class="btn-open" onclick="openInvitation()">
+                <i class="fa-open fas fa-envelope-open"></i> Buka Undangan
+            </button>
+        </div>
+    </div>
+
+    <div id="main-invitation-content">
+        
+        <section class="quote-section">
+            <div class="container text-center">
+                <div class="quran-container">
+                    <i class="fas fa-heart decor-heart"></i>
+                    <p class="ar-text">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا Lِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَرَحْمَةً ۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ Lِّقَوْمٍ يَّتَفَكَّرُوْنَ</p>
+                    <p class="id-translation">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir."</p>
+                    <span class="surah-name">( QS. Ar-Rum Ayat 21 )</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mempelai-section">
+            <div class="container text-center">
+                <h2 class="section-title">Mempelai Pernikahan</h2>
+                <div class="divader-dots"></div>
+                <div class="mempelai-grid">
+                    <div class="profile-card">
+                        <div class="img-frame">
+    <img src="pp.jpg" alt="Mempelai Pria">
+</div>
+                        </div>
+                        <h3>Gibran Rakabuming Raka B.Sc.</h3>
+                        <p class="parent-name">Putra dari Bpk. Joko Widodo &  Iriana Joko Widodo</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/gibran_rakabuming?igsh=MWF2NjJudzY0N3U3dw=="><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="ampersand">&</div>
+                    <div class="profile-card">
+     <div class="img-frame">
+    <img src="ww.jpg" alt="Mempelai Wanita">
+</div>
+                        </div>
+                        <h3> Selvi Ananda Putri</h3>
+                        <p class="parent-name">Putri dari Bpk. lmarhum Didit Supriyadi & Ibu Sri Partini</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/selviananda.official?igsh=Mmt1dmZ4djlhYnNj"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-section">
+            <div class="container">
+                <h2 class="section-title text-center">Detail Acara</h2>
+                <div class="divader-dots text-center"></div>
+
+                <div class="event-grid">
+                    <div class="event-card">
+                        <div class="card-header-icon"><i class="fas fa-ring"></i></div>
+                        <h3>Akan Nikah</h3>
+                        <div class="event-info">
+                            <p><i class="far fa-calendar-alt"></i> Sabtu, 6 Juni Mei 2026</p>
+                            <p><i class="far fa-clock"></i> 08.00 WIB - Selesai</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Jl. A. Yani, Komp. ABC, Banjarbaru Selatan, Kota Banjarbaru</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-header-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Resepsi Pernikahan</h3>
+                        <div class="event-info">
+                            <p><i class="far fa-calendar-alt"></i> Sabtu, 13 juni 2026</p>
+                            <p><i class="far fa-clock"></i> 08.00 WIB - Selesai</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Jl. A. Yani, Komp. ABC, Banjarbaru Selatan, Kota Banjarbaru</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2551745423877!2d106.8248149!3d-6.2300441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTMnNDguMiJTIDEwNsKwNDknMjkuMyJF!5e0!3m2!1sid!2sid!4v1650000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container text-center">
+                <h2 class="section-title">Galeri Kebahagiaan</h2>
+                <div class="divader-dots"></div>
+<div class="gallery-grid">
+    <div class="gallery-item"><img src="a.jpg" alt="Gallery 1"></div>
+    <div class="gallery-item"><img src="b.jpg" alt="Gallery 2"></div>
+    <div class="gallery-item"><img src="c.jpg" alt="Gallery 3"></div>
+    <div class="gallery-item"><img src="e.jpg" alt="Gallery 4"></div>
+    <div class="gallery-item"><img src="f.jpg" alt="Gallery 5"></div>
+    <div class="gallery-item"><img src="g.jpg" alt="Gallery 6"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rsvp-section">
+            <div class="container">
+                <h2 class="section-title text-center">Ucapan & Konfirmasi Kehadiran</h2>
+                <div class="divader-dots text-center"></div>
+                
+                <div class="rsvp-box">
+                    <form id="guestForm" onsubmit="submitComment(event)">
+                        <div class="form-group">
+                            <label for="guestName">Nama Anda</label>
+                            <input type="text" id="guestName" required placeholder="Masukkan Nama Lengkap">
+                        </div>
+                        <div class="form-group">
+                            <label for="guestStatus">Konfirmasi Kehadiran</label>
+                            <select id="guestStatus" required>
+                                <option value="" disabled selected>-- Pilih Status --</option>
+                                <option value="Hadir">Hadir</option>
+                                <option value="Tidak Hadir">Tidak Hadir</option>
+                                <option value="Masih Ragu">Masih Ragu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guestMsg">Ucapan / Doa Restu</label>
+                            <textarea id="guestMsg" rows="4" required placeholder="Tulis doa terbaik Anda untuk kedua mempelai..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Kirim Ucapan <i class="fas fa-paper-plane"></i></button>
+                    </form>
+
+                    <div id="messagesFeed" class="messages-feed-container">
+                        <div class="message-card">
+                            <div class="message-header">
+                                <span class="msg-author">Gibran Rakabuming Raka</span>
+                                <span class="msg-status status-hadir">Hadir</span>
+                                <span class="msg-time">26 Mei 2026 - 10:15 WIB</span>
+                            </div>
+                            <div class="msg-content">Selamat menempuh hidup baru untuk kedua mempelai! Semoga menjadi keluarga yang sakinah, mawaddah, dan warahmah. Amin.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container text-center">
+                <h2 class="serif-title">Gibran Rakabuming Raka & Selvi Ananda Putri</h2>
+                <p>Terima kasih atas doa restu dan kehadiran Bapak/Ibu/Saudara/i sekalian.</p>
+                <div class="footer-credit">Created with ❤️ | Premium Digital Invitation</div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
